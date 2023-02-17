@@ -193,7 +193,7 @@ local SaveManager = {} do
 	end
 
 
-	function SaveManager:BuildConfigSection(tab)
+	function SaveManager:BuildConfigSection(OtherTab)
 		assert(self.Library, 'Must set SaveManager.Library')
 		local element = OtherTab:addSection("Config")
 		local section = element:newSection("Configuration Manager", true)
